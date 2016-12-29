@@ -1,0 +1,49 @@
+<section class="hero is-fullheight is-info">
+  <div class="hero-body">
+    <div class="container">
+      <div class="columns">
+        <div class="column is-half is-offset-one-quarter">
+          <h1 class="title is-1">
+            Signup
+          </h1>
+          <h2 class="subtitle is-4">
+            to get started!
+          </h2>
+          <form ng-submit="signup(user)">
+            <p class="control has-icon">
+              <input class="input is-large" type="text" ng-model="user.nickname" placeholder="Nickname">
+              <i class="fa fa-user"></i>
+            </p>
+            <p class="control has-icon">
+              <input class="input is-large" type="text" ng-model="user.email" placeholder="Email">
+              <i class="fa fa-envelope"></i>
+            </p>
+            <p class="control has-icon">
+              <input class="input is-large" type="password" ng-model="user.password" placeholder="Password">
+              <i class="fa fa-lock"></i>
+            </p>
+            <p class="control">
+              <button type="submit" class="button is-success is-medium"
+                     ng-class="{'is-loading': submitting}">Signup</button>
+            <p>
+          </form>
+          <div class="control">
+            <div class="notification is-danger" ng-if="error">
+              <p ng-repeat="error in errorMessages">{{error.msg}}</<p>
+            </div>
+          </div>
+
+          <div class="control">
+            <div class="notification is-success" ng-if="success">
+              <p>{{successMessage}}</p>
+            </div>
+          </div>
+
+          <p class="control">
+            <a style="color: #fff;" href="/#!/">Login</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

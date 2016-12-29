@@ -1,0 +1,8 @@
+node_modules
+.env
+Procfile_dev
+npm-debug.log
+bower_components
+.sass-cache
+public/css/style.css
+public/bundle.js

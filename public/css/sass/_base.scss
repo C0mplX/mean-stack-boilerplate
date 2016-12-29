@@ -1,0 +1,27 @@
+
+$primary: #F16745;
+//$primary: #F18C9D;
+$blue: #4CC3D9;
+$green: #7BC8A4;
+$orange: #FFC65D;
+$body-background: #fff;
+
+//$family-serif: "Georgia", serif; // Add a serif family
+
+//$danger: $orange; // Use the existing orange
+//$family-primary: $family-serif ;// Use the new serif family
+
+// Import font-awesome
+@import "../../../node_modules/font-awesome/scss/font-awesome";
+@import "../../../node_modules/bulma/bulma";
+
+span.addons-text {
+  padding: 5px;
+}
+
+.center-text {
+  line-height: 64px;
+  text-align: center;
+  color: #fff;
+  font-size: 40px;
+}
