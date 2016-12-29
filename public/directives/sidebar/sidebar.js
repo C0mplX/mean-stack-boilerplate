@@ -6,9 +6,7 @@ function( $rootScope, location ) {
 
     $scope.logout = function() {
       window.localStorage.removeItem( "token" );
-      $rootScope.socket.emit( 'disconnect' );
-      $rootScope.socket = false;
-      location.path( '/' );
+      location.path( '/login' );
     }
   }
 

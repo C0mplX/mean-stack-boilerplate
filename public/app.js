@@ -26,7 +26,7 @@ angular.module( 'app', ['ngRoute', 'controllers', 'directives', 'angularMoment',
     } )
 
     // protected routes
-    .when( '/proteced', {
+    .when( '/protected', {
         templateUrl: 'templates/protected/home.html'
     } )
 
@@ -52,13 +52,7 @@ angular.module( 'app', ['ngRoute', 'controllers', 'directives', 'angularMoment',
               $location.path('/login');
 
             }else if( res.success == true ) {
-
-              if( nextUrl == '/proteced' ) {
-
-              }else {
-                $location.path('/stories');
-              }
-
+              $location.path('/protected');
             }
           } );
         }
